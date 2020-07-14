@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroungimag"
+    tools:context=".fregment.notification.NotificationFragment">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="5dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:background="#fdcccbca"/>
+
+    <ImageView
+        android:id="@+id/crosiconimage"
+        android:layout_below="@+id/view"
+        android:src="@drawable/crossicon"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_below="@+id/crosiconimage"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:background="#fdcccbca"/>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        android:layout_marginLeft="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/notifyiconimage"
+            android:src="@drawable/notificatonicon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_below="@+id/notifyiconimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notifications"
+            android:textColor="@color/Blacki"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/textview"
+            android:id="@+id/recyclerViewnotify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="60dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

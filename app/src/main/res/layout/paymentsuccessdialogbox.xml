@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/backgroungimag"
+    android:layout_width="match_parent"
+    android:layout_height="430dp">
+
+
+    <TextView
+        android:id="@+id/text001"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="PAYMENT STATUS"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+   <!-- <View
+        android:id="@+id/view0"
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dp"
+        android:background="#fdcccbca"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"/>-->
+
+    <TextView
+        android:id="@+id/text002"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please deposit Fee in given bank account details &amp; call on Mob.8750187506 !"
+        android:textColor="@color/Blacki"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Blacki"
+            android:text="Bank Account Details"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_below="@+id/text01"
+            android:layout_width="fill_parent"
+            android:layout_height="1.5dp"
+            android:background="#fdcccbca"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/text02"
+            android:layout_below="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Holder:"
+            android:textColor="@color/textcolor4"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text03"
+            android:layout_below="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor3"
+            android:text="PATANJALI IAS CLASSES"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="125dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text04"
+            android:layout_below="@+id/text02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank:"
+            android:textColor="@color/textcolor4"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text05"
+            android:layout_below="@+id/text03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor3"
+            android:text="Bank of Baroda"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="125dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text06"
+            android:layout_below="@+id/text04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account No.:"
+            android:textColor="@color/textcolor4"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text07"
+            android:layout_below="@+id/text05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor3"
+            android:text="21310200011934"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="125dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text08"
+            android:layout_below="@+id/text06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Type:"
+            android:textColor="@color/textcolor4"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text09"
+            android:layout_below="@+id/text07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor3"
+            android:text="Current Account"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="125dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text010"
+            android:layout_below="@+id/text08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IFSC Code:"
+            android:textColor="@color/textcolor4"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text011"
+            android:layout_below="@+id/text09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor3"
+            android:text="BARB0TRDKIN"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="125dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text012"
+            android:layout_below="@+id/text010"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch:"
+            android:textColor="@color/textcolor4"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text013"
+            android:layout_below="@+id/text011"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor3"
+            android:text="Kingsway Camp, Delhi"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="125dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/oktextview"
+        android:layout_below="@+id/text013"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="OK"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorrgray"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.patanjali.patanjaliiasclasses.fregment.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_liveclass"
+        android:name="com.patanjali.patanjaliiasclasses.fregment.morningclass.MorningClassFragment"
+        android:label="@string/menu_liveclass"
+        tools:layout="@layout/fragment_morningclass" />
+
+    <fragment
+        android:id="@+id/nav_morningclasdetail"
+        android:name="com.patanjali.patanjaliiasclasses.fregment.mornningclasdetail.MorningClassDetailFragment"
+        android:label="@string/menu_morningclassdetail"
+        tools:layout="@layout/fragment_morningclasdetail" />
+
+    <fragment
+        android:id="@+id/nav_mylibrary"
+        android:name="com.patanjali.patanjaliiasclasses.fregment.mylibrary.MyLibraryFragment"
+        android:label="@string/menu_mylibrary"
+        tools:layout="@layout/fragment_my_library" />
+
+    <fragment
+        android:id="@+id/nav_freedonloas"
+        android:name="com.patanjali.patanjaliiasclasses.fregment.freedownloads.FreeDowloadsFragment"
+        android:label="@string/menu_freedownloads"
+        tools:layout="@layout/fragment_free_dowloads" />
+
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.patanjali.patanjaliiasclasses.fregment.contactus.ContactUSFragment"
+        android:label="@string/menu_contactus"
+        tools:layout="@layout/fragment_contact_u" />
+
+</navigation>

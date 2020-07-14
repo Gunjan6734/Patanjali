@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroungimag"
+    tools:context=".fregment.contactus.ContactUSFragment">
+    <RelativeLayout
+        android:id="@+id/relativ"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/text7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us >>"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview1"
+        android:layout_below="@+id/relativ"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview0002"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="15dp"
+                app:cardMaxElevation="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/textcolor6">
+
+                    <TextView
+                        android:id="@+id/te1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="For Any Issue In Using App or In Buying Content, Contact Us:"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview003"
+                android:layout_below="@+id/cardview0002"
+                android:layout_centerHorizontal="true"
+                android:layout_width="145dp"
+                android:layout_height="115dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="15dp"
+                app:cardMaxElevation="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:src="@drawable/callinglogo"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="10dp"
+                        android:padding="10dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:src="@drawable/whatsapplogo"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/callingtest"
+                android:layout_below="@+id/cardview003"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call us: +91-9311363704"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/whattsaptext"
+                android:layout_below="@+id/callingtest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Whatsapp: +91-9311363704"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardvi03"
+                android:layout_below="@+id/whattsaptext"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="15dp"
+                app:cardBackgroundColor="#f4f8fb"
+                app:cardMaxElevation="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/te12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Please Deposit Fee In Below Bank Account Details, Send Deposit Slip &amp; Call On 8750187506"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_below="@+id/cardvi03"
+                android:src="@drawable/helupusimage"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

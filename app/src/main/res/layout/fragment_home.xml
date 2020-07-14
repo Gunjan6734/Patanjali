@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroungimag">
+
+    <ScrollView
+        android:id="@+id/scrollview1"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/real"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cartid"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="15dp"
+                app:cardMaxElevation="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="5dp">
+
+                <RelativeLayout
+                    android:background="@drawable/cardlayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/live"
+                        android:layout_width="100dp"
+                        android:visibility="invisible"
+                        android:src="@drawable/live"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_height="15dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="Live Classroom"
+                        android:textStyle="bold|italic"
+                        android:textColor="@color/livclasstextcolor"
+                        android:textSize="25sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"/>
+
+                    <!-- <TextView
+                         android:id="@+id/otptext"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="dfddgsfs"
+                         android:textStyle="bold|italic"
+                         android:textColor="@color/livclasstextcolor"
+                         android:textSize="14sp"
+                         android:layout_marginLeft="150dp"
+                         android:layout_marginTop="20dp"/>-->
+
+                    <ImageView
+                        android:id="@+id/liveclsicon"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/liveclasicon"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"/>
+
+                    <TextView
+                        android:id="@+id/text002"
+                        android:layout_below="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Webinar Platform for Live Classes"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="15dp"/>
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_below="@+id/text002"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Digital Whiteboard | Screen/Notes Sharing | Recording"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cartid2"
+                android:layout_below="@+id/cartid"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="15dp"
+                app:cardMaxElevation="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <RelativeLayout
+                    android:background="@drawable/cardlayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/onlncorsimag"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/onlinecoursesicon"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"/>
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="93dp"
+                        android:layout_height="wrap_content"
+                        android:text="Online Courses"
+                        android:textStyle="bold|italic"
+                        android:textColor="@color/onlinclastextcolor"
+                        android:textSize="25sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"/>
+
+                    <TextView
+                        android:id="@+id/text004"
+                        android:layout_below="@+id/text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Interactive Tutorial, Online Study Materials with"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="15dp"/>
+
+                    <TextView
+                        android:id="@+id/text4"
+                        android:layout_below="@+id/text004"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Video | Practice set | Test Assessment"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cartid3"
+                android:layout_below="@+id/cartid2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="15dp"
+                app:cardMaxElevation="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <RelativeLayout
+                    android:background="@drawable/cardlayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/text5"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Test Series"
+                        android:textStyle="bold|italic"
+                        android:textColor="@color/testseristextcolor"
+                        android:textSize="25sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"/>
+
+                    <ImageView
+                        android:id="@+id/testserisimage"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/testseriesicon"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"/>
+
+                    <TextView
+                        android:id="@+id/text006"
+                        android:layout_below="@+id/text5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Online Test Series, Real Time Exams Experience"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="15dp"/>
+
+                    <TextView
+                        android:id="@+id/text6"
+                        android:layout_below="@+id/text006"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Practice Sets | Latest Pattern | Time Management"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cartid4"
+                android:layout_below="@+id/cartid3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="15dp"
+                app:cardMaxElevation="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <RelativeLayout
+                    android:background="@drawable/cardlayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/text7"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:text="Scholarship"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold|italic"
+                        android:textColor="@color/scholorshiptextcolor"
+                        android:textSize="25sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"/>
+
+                    <ImageView
+                        android:id="@+id/scrolshipimage"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/scholarshipicon"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"/>
+
+                    <TextView
+                        android:id="@+id/text008"
+                        android:layout_below="@+id/scrolshipimage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sponsor Scholarship, Enter-to-Win Scholarships for"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="15dp"/>
+
+                    <TextView
+                        android:id="@+id/text8"
+                        android:layout_below="@+id/text008"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meritorious Aspirants | Academic Merit | Financial Support"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cartid5"
+                android:layout_below="@+id/cartid4"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="15dp"
+                app:cardMaxElevation="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <RelativeLayout
+                    android:background="@drawable/cardlayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/text9"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="Video Courses"
+                        android:textStyle="bold|italic"
+                        android:textColor="@color/videotextcolor"
+                        android:textSize="25sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"/>
+
+                    <ImageView
+                        android:id="@+id/vediocorsimage"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/videocoursesicon"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"/>
+
+                    <TextView
+                        android:id="@+id/text0010"
+                        android:layout_below="@+id/text9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Online Video Tutorial, Live Class Recordings"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="15dp"/>
+
+                    <TextView
+                        android:id="@+id/text10"
+                        android:layout_below="@+id/text0010"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Video Lectures | Coaching Class Videos | Assessment"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cartid6"
+                android:layout_below="@+id/cartid5"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="15dp"
+                app:cardMaxElevation="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cardlayout6">
+
+                    <TextView
+                        android:id="@+id/text11"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Free Downloads"
+                        android:textColor="@color/freelivtextcolor"
+                        android:textSize="25sp"
+                        android:textStyle="bold|italic" />
+
+                    <ImageView
+                        android:id="@+id/freelivrimage"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/freedownloadicon" />
+
+                    <TextView
+                        android:id="@+id/text0012"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text11"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Available Free to Prepare Different Exams or Download"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text0012"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Useful Video | Course Material | Online Tutorial | Test Paper | Test Series"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cartid7"
+                android:layout_below="@+id/cartid6"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="10dp"
+                app:cardMaxElevation="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/Blacki">
+
+                    <TextView
+                        android:id="@+id/te1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="For Any Issue In Using App or In Buying Content, Contact Us:"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout"
+                android:layout_below="@+id/cartid7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview003"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="160dp"
+                    android:layout_height="130dp"
+                    app:cardCornerRadius="15dp"
+                    android:elevation="15dp"
+                    app:cardMaxElevation="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <RelativeLayout
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/callingimage"
+                            android:src="@drawable/callinglogo"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"/>
+
+                        <TextView
+                            android:id="@+id/textview1"
+                            android:layout_below="@+id/callingimage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CALL US "
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/callingnumtext"
+                            android:layout_below="@+id/textview1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+91-9311363704"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview004"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="160dp"
+                    android:layout_height="130dp"
+                    app:cardCornerRadius="15dp"
+                    android:elevation="15dp"
+                    app:cardMaxElevation="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <RelativeLayout
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/whatsapimage"
+                            android:src="@drawable/whatsapplogo"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"/>
+
+                        <TextView
+                            android:id="@+id/textview3"
+                            android:layout_below="@+id/whatsapimage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="WHATSAPP "
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/whatsapnumtext"
+                            android:layout_below="@+id/textview3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+91-9311363704"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text0001"
+                android:layout_below="@+id/relativelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Blacki"
+                android:text="For Payment Related Query Call on 8750187506"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cartid8"
+                android:layout_below="@+id/text0001"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="15dp"
+                app:cardMaxElevation="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-50dp">
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/text01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Blacki"
+                        android:text="Bank Account Details"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_below="@+id/text01"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.5dp"
+                        android:background="#fdcccbca"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:id="@+id/text02"
+                        android:layout_below="@+id/view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Account Holder:"
+                        android:textColor="@color/textcolor4"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text03"
+                        android:layout_below="@+id/view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textcolor3"
+                        android:text="PATANJALI IAS CLASSES"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/text04"
+                        android:layout_below="@+id/text02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bank:"
+                        android:textColor="@color/textcolor4"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text05"
+                        android:layout_below="@+id/text03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textcolor3"
+                        android:text="Bank of Baroda"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/text06"
+                        android:layout_below="@+id/text04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Account No.:"
+                        android:textColor="@color/textcolor4"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text07"
+                        android:layout_below="@+id/text05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textcolor3"
+                        android:text="21310200011934"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/text08"
+                        android:layout_below="@+id/text06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Account Type:"
+                        android:textColor="@color/textcolor4"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text09"
+                        android:layout_below="@+id/text07"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textcolor3"
+                        android:text="Current Account"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/text010"
+                        android:layout_below="@+id/text08"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IFSC Code:"
+                        android:textColor="@color/textcolor4"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text011"
+                        android:layout_below="@+id/text09"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textcolor3"
+                        android:text="BARB0TRDKIN"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/text012"
+                        android:layout_below="@+id/text010"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Branch:"
+                        android:textColor="@color/textcolor4"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text013"
+                        android:layout_below="@+id/text011"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textcolor3"
+                        android:text="Kingsway Camp, Delhi"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:layout_below="@+id/cartid8"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/footerimage"
+                android:textStyle="bold"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

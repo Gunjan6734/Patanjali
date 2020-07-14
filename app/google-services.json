@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "95925870767",
+    "firebase_url": "https://global-class.firebaseio.com",
+    "project_id": "global-class",
+    "storage_bucket": "global-class.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95925870767:android:768c4779a1c2c255ca745a",
+        "android_client_info": {
+          "package_name": "com.patanjali.patanjaliiasclasses"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95925870767-bf1inhu490q2u7rrvrl1lib8e7fhjbho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5NCxOE9rVPGMT4SuIfKb2zmf5iFT4XuI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "95925870767-bf1inhu490q2u7rrvrl1lib8e7fhjbho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

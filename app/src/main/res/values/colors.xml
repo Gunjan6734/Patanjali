@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#de632c</color>
+    <color name="colorPrimaryDark">#de632c</color>
+    <color name="colorAccent">#de632c</color>
+
+    <color name="colorWhite">#fff</color>
+    <color name="Blacki">#fd050101</color>
+    <color name="Black2">#FD5C5A5A</color>
+    <color name="layout_color">#FD91908F</color>
+    <color name="colorrgray2">#F5F3F3</color>
+
+    <color name="colorrgray">#D3D0D0</color>
+    <color name="colorgreen">#89DB2C</color>
+    <color name="submitcolor">#23bab1</color>
+    <color name="colorsetpass">#EEBC5A</color>
+
+    <color name="scholorshiptextcolor">#66646f</color>
+    <color name="videotextcolor">#291d10</color>
+    <color name="freelivtextcolor">#e9e9eb</color>
+    <color name="livclasstextcolor">#fabf33</color>
+    <color name="onlinclastextcolor">#fcf0f0</color>
+    <color name="testseristextcolor">#e9e9eb</color>
+
+    <color name="textcolor1">#080008</color>
+    <color name="textcolor02">#373535</color>
+    <color name="textcolor2">#8d8484</color>
+    <color name="textcolor3">#de632c</color>
+    <color name="textcolor4">#313236</color>
+    <color name="textcolor5">#c436bf</color>
+    <color name="textcolor6">#f4f8fb</color>
+
+    <color name="librarycolor1">#090301</color>
+    <color name="librarycolor2">#060604</color>
+    <color name="librarycolor3">#797771</color>
+    <color name="librarycolor4">#2d2d2d</color>
+
+
+    <color name="graph_color1">#865B1C</color>
+    <color name="graph_color2">#1d5a99</color>
+    <color name="color4">#83411e</color>
+    <color name="color7">#bc4107</color>
+    <color name="color5">#CFDB60</color>
+    <color name="color6">#F5B251</color>
+    <color name="color8">#FF9800</color>
+
+    <color name="color1">#337ab7</color>
+    <color name="color2">#DD8C18</color>
+    <color name="splacecolor">#fabf33</color>
+
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#FF9800</color>
+    <color name="dot_dark_screen2">#FF9800</color>
+    <color name="dot_dark_screen3">#FF9800</color>
+
+    <color name="dot_light_screen1">#1d5a99</color>
+    <color name="dot_light_screen2">#1d5a99</color>
+    <color name="dot_light_screen3">#1d5a99</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+
+    </array>
+
+</resources>

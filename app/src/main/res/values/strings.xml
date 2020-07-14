@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Patanjali IAS Classes</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_liveclass">Live Classroom</string>
+    <string name="menu_onlineclass">Online Courses</string>
+    <string name="menu_testseries">Test Series</string>
+    <string name="menu_scholarshipprogram">Scholarship</string>
+    <string name="menu_videocorses">Video Courses</string>
+    <string name="menu_freedownloads">Free Downloads</string>
+    <string name="menu_mylibrary">My Library</string>
+    <string name="menu_aboutus">About Us</string>
+    <string name="menu_yourprofile">Your Profile</string>
+    <string name="menu_contactus">Contact Us</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_morningclassdetail">Class Details</string>
+
+    <string name="youAreNotUpdatedTitle">Update Available</string>
+    <string name="youAreNotUpdatedMessage">A new version of YOUR_APP_NAME is available. Please update to version\s</string>
+    <string name="youAreNotUpdatedMessage1">\s now</string>
+    <string name="update">Update</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--&lt;!&ndash; TODO: Remove or change this placeholder text &ndash;&gt;
+    <string name="hello_blank_fragment">Hello blank fragment</string>-->
+
+
+</resources>

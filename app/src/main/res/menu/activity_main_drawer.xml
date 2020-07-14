@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/homeiconsss"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_liveclass"
+            android:icon="@drawable/liveclssesiconsss"
+            android:title="@string/menu_liveclass" />
+        <item
+            android:id="@+id/nav_onlineclas"
+            android:icon="@drawable/onlineclassiconsss"
+            android:title="@string/menu_onlineclass" />
+        <item
+            android:id="@+id/nav_testseries"
+            android:icon="@drawable/testseriesiconsss"
+            android:title="@string/menu_testseries" />
+        <item
+            android:id="@+id/nav_scholarship"
+            android:icon="@drawable/scholarshipiconsss"
+            android:title="@string/menu_scholarshipprogram" />
+        <item
+            android:id="@+id/nav_videoclass"
+            android:icon="@drawable/videcoursiconsss"
+            android:title="@string/menu_videocorses" />
+
+        <item
+            android:id="@+id/nav_freedonloas"
+            android:icon="@drawable/freedownloadiconsss"
+            android:title="@string/menu_freedownloads" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:visible="false"
+                android:id="@+id/nav_mylibrary"
+                android:icon="@drawable/mlibraryiconsss"
+                android:title="@string/menu_mylibrary" />
+            <item
+                android:visible="false"
+                android:id="@+id/nav_aboutus"
+                android:icon="@drawable/abouticonsss"
+                android:title="@string/menu_aboutus" />
+            <item
+                android:visible="false"
+                android:id="@+id/nav_yourprofile"
+                android:icon="@drawable/usericonsss"
+                android:title="@string/menu_yourprofile" />
+            <item
+                android:visible="false"
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/contacticonsss"
+                android:title="@string/menu_contactus" />
+            <item
+                android:visible="false"
+                android:id="@+id/nav_logoutfregment"
+                android:icon="@drawable/logouticonsss"
+                android:title="@string/menu_logout" />
+        </menu>
+    </item>
+
+</menu>

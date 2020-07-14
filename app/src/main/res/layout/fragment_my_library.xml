@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroungimag"
+    tools:context="com.patanjali.patanjaliiasclasses.fregment.mylibrary.MyLibraryFragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViemylibrary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="60dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/textcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:text="You Don't Have Any Library"
+        android:textColor="@color/Blacki"
+        android:gravity="center"
+        android:textSize="22sp" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroungimag"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fregment.profile.ProfileFragment">
+
+    <ScrollView
+        android:id="@+id/scrollview1"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                android:elevation="15dp"
+                app:cardMaxElevation="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/textcolor6">
+
+                <FrameLayout
+                    android:id="@+id/fram"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/classname04"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/textcolor02"
+                                android:text="IX - X Science [Morning Batch]"
+                                android:textSize="14sp"
+                                android:textStyle="bold"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fram2"
+                        android:layout_below="@+id/fram"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:id="@+id/bredcrumbs04"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textcolor2"
+                            android:text="Secondary Stage = Class IX - X"
+                            android:textSize="10sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/goalsidtext04"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="280dp"
+                            android:text="0"
+                            android:visibility="gone"
+                            android:textColor="@color/textcolor3"
+                            android:textSize="12sp"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fram002"
+                        android:layout_below="@+id/fram2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:id="@+id/meetingid2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textcolor2"
+                            android:text=""
+                            android:textSize="10sp"
+                            android:textStyle="bold"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fram4"
+                        android:layout_below="@+id/fram002"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="7dp">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="Online Seets"
+                                    android:textColor="@color/textcolor4"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/onlineseetcount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="20dp"
+                                    android:text="5"
+                                    android:textColor="@color/textcolor3"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Teachers"
+                                    android:textColor="@color/textcolor4"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/teachertext"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="15dp"
+                                    android:text="1"
+                                    android:textColor="@color/textcolor3"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fram3"
+                        android:layout_below="@+id/fram4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="Classes"
+                                    android:textColor="@color/textcolor4"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/classescount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="20dp"
+                                    android:text="14"
+                                    android:textColor="@color/textcolor3"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Subjects"
+                                    android:textColor="@color/textcolor4"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/subjecttext"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="15dp"
+                                    android:text="1"
+                                    android:textColor="@color/textcolor3"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fram5"
+                        android:layout_below="@+id/fram3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="Class Date"
+                                    android:textColor="@color/textcolor4"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/clsdatetxt04"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="20dp"
+                                    android:text="10/02/2020"
+                                    android:textColor="@color/textcolor3"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Class Time"
+                                    android:textColor="@color/textcolor4"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/clastimtext04"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="15dp"
+                                    android:text="10:00 AM"
+                                    android:textColor="@color/textcolor3"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fram6"
+                        android:layout_below="@+id/fram5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginTop="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/onlinefeeamount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:text="Rs.00.00"
+                                android:textColor="@color/textcolor3"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+
+                    <!-- <Button
+                         android:id="@+id/buynowbutton04"
+                         android:layout_width="65dp"
+                         android:layout_height="24dp"
+                         android:layout_marginTop="0dp"
+                         android:layout_marginLeft="5dp"
+                         android:layout_marginRight="20dp"
+                         android:background="@color/textcolor3"
+                         android:text="Buy Now "
+                         android:textStyle="bold"
+                         android:textColor="@color/colorWhite"
+                         android:textSize="10sp" />-->
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/yourtext"
+                android:layout_below="@+id/cardview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Your Details"
+                android:textColor="@color/textcolor4"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@id/yourtext"
+                >
+
+                <EditText
+                    android:id="@+id/yournumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Register Mobile No."
+                    android:textColor="@color/Blacki"
+                    android:inputType="number"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:maxLength="10"
+                    android:paddingLeft="8dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@id/inputlayout1"
+                >
+
+                <EditText
+                    android:id="@+id/fstnameedttext"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="First Name"
+                    android:textColor="@color/Blacki"
+                    android:inputType="textPersonName"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:paddingLeft="8dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@id/inputlayout2"
+                >
+
+                <EditText
+                    android:id="@+id/lastnameedttext"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Last Name"
+                    android:textColor="@color/Blacki"
+                    android:inputType="textPersonName"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:paddingLeft="8dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@id/inputlayout3"
+                >
+
+                <EditText
+                    android:id="@+id/emailedttext"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Email ID"
+                    android:textColor="@color/Blacki"
+                    android:inputType="textEmailAddress"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:paddingLeft="8dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@id/inputlayout4">
+
+                <TextView
+                    android:id="@+id/selectstatetext"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Select State"
+                    android:textColor="@color/Blacki"
+                    android:inputType="text"
+                    android:paddingRight="15dp"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14sp"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <View
+                android:id="@+id/view0"
+                android:layout_below="@+id/inputlayout5"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/Black2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@id/view0">
+
+                <EditText
+                    android:id="@+id/cityedittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="City"
+                    android:textColor="@color/Blacki"
+                    android:inputType="textPostalAddress"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:paddingLeft="8dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@id/inputlayout6">
+
+                <EditText
+                    android:id="@+id/addresedttext"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Address"
+                    android:textColor="@color/Blacki"
+                    android:inputType="textPostalAddress"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:paddingLeft="8dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@id/inputlayout7">
+
+                <EditText
+                    android:id="@+id/pincodeedttext"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Pin Code"
+                    android:textColor="@color/Blacki"
+                    android:inputType="number"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:maxLength="6"
+                    android:paddingLeft="8dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+           <ImageView
+               android:id="@+id/imagelogo"
+               android:layout_below="@+id/inputlayout8"
+               android:layout_width="match_parent"
+               android:layout_height="100dp"
+               android:src="@drawable/paymentoption"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="5dp"
+               android:layout_marginRight="15dp"
+               android:layout_marginLeft="15dp">
+
+           </ImageView>
+
+            <Button
+                android:id="@+id/continubybuton"
+                android:layout_below="@+id/imagelogo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:text="Pay Now "
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

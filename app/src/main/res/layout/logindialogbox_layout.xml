@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/backgroungimag"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+
+    <RelativeLayout
+        android:id="@+id/relativregisternow"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/textregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In / Sign Up"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textregsetpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You Have Successfully Registered!"
+            android:visibility="gone"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/loginrelativouyt"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="260dp">
+
+        <EditText
+            android:id="@+id/registermobilenumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter Mobile No"
+            android:textColor="@color/Blacki"
+            android:background="@drawable/inputs"
+            android:inputType="number"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="8dp"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:maxLength="10" />
+
+        <TextView
+            android:id="@+id/registeritemetdtext"
+            android:layout_below="@+id/registermobilenumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Select Your Goal"
+            android:visibility="gone"
+            android:textColor="@color/Blacki"
+            android:background="@drawable/inputs"
+            android:inputType="text"
+            android:paddingRight="20dp"
+            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/registerotpedttext"
+            android:layout_below="@+id/registeritemetdtext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter OTP"
+            android:visibility="gone"
+            android:textColor="@color/Blacki"
+            android:background="@drawable/inputs"
+            android:inputType="number"
+            android:paddingLeft="8dp"
+            android:paddingRight="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:maxLength="6" />
+
+        <EditText
+            android:id="@+id/setloginpassword"
+            android:layout_below="@+id/registeritemetdtext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter Password"
+            android:visibility="gone"
+            android:textColor="@color/Blacki"
+            android:background="@drawable/inputs"
+            android:inputType="textPassword"
+            android:paddingLeft="8dp"
+            android:paddingRight="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:maxLength="25" />
+
+
+        <EditText
+            android:id="@+id/setloginotppassword"
+            android:layout_below="@+id/registeritemetdtext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter OTP/Password"
+            android:textColor="@color/Blacki"
+            android:background="@drawable/inputs"
+            android:inputType="number"
+            android:paddingLeft="8dp"
+            android:paddingRight="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:maxLength="25" />
+
+
+        <TextView
+            android:id="@+id/forgetpassword"
+            android:layout_below="@+id/registeritemetdtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="55dp"
+            android:text="Forgot Password"
+            android:visibility="gone"
+            android:textColor="@color/Blacki"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/resendotp"
+            android:layout_below="@+id/registeritemetdtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="55dp"
+            android:text="Resend OTP"
+            android:visibility="gone"
+            android:textColor="@color/Blacki"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/resendotptimer"
+            android:layout_below="@+id/registeritemetdtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="55dp"
+            android:visibility="gone"
+            android:text="Did Not Receive OTP? Resend OTP In 30 Seconds"
+            android:textColor="@color/Blacki"
+            android:textSize="12sp" />
+
+
+        <Button
+            android:id="@+id/registerbutton"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp"
+            android:background="@color/submitcolor"
+            android:text="submit "
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/registerbuttonoldusr"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp"
+            android:background="@color/submitcolor"
+            android:text="submit "
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/loginbutton"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/submitcolor"
+            android:text="login"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/cancelbutton"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/submitcolor"
+            android:text="cancel"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setpassrelativouyt"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="260dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Set Login Password"
+            android:paddingLeft="8dp"
+            android:textSize="16sp"
+            android:background="@color/colorsetpass"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"/>
+        <EditText
+            android:id="@+id/setpasswordedttext"
+            android:layout_below="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter Password"
+            android:textColor="@color/Blacki"
+            android:background="@drawable/inputs"
+            android:inputType="textPassword"
+            android:paddingLeft="8dp"
+            android:paddingRight="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:maxLength="25" />
+
+        <EditText
+            android:id="@+id/confirmsetpasswordedttext"
+            android:layout_below="@+id/setpasswordedttext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Confirm Password"
+            android:textColor="@color/Blacki"
+            android:background="@drawable/inputs"
+            android:inputType="textPassword"
+            android:paddingLeft="8dp"
+            android:paddingRight="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:maxLength="25" />
+
+        <Button
+            android:id="@+id/setpassbutton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/submitcolor"
+            android:text="submit "
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/setolduserpassbutton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/submitcolor"
+            android:text="submit "
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
