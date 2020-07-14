@@ -160,6 +160,10 @@ public class HomeFragment extends Fragment {
             home.setVisibility(View.GONE);
         }
 
+        //homepage beckpress button checker
+        editor = sharedPreferences.edit();
+        editor.putBoolean("firsttime",true);
+        editor.apply();
 
         //connection chewcking
         if (UserSession.getIsLogin(mainActivity)){

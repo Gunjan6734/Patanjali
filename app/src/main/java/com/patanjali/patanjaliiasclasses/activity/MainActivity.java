@@ -104,6 +104,8 @@ public class MainActivity extends AppCompatActivity {
     MediaProjectionManager mProjectionManager;
     FragmentManager manager;
     private CountDownTimer timer;
+    int doubleBackToExitPressed = 1;
+
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -126,6 +128,10 @@ public class MainActivity extends AppCompatActivity {
         progressDialog = new ProgressDialog(this);
         userSession = new UserSession(this);
         mainActivity = (this);
+
+        editor = sharedPreferences.edit();
+        editor.putBoolean("firsttime",true);
+        editor.apply();
 
          //  mobilenumber=findViewById(R.id.mobilenumber);
         //  otpedttext=findViewById(R.id.otpedttext);
@@ -404,11 +410,10 @@ public class MainActivity extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
-
     @Override
     public void onBackPressed() {
 
-        if (getFragmentManager().getBackStackEntryCount() == 0) {
+        if (getFragmentManager().getBackStackEntryCount() >=0) {
             HomeFragment homeFragment = new HomeFragment();
             FragmentManager fragmentManager = getSupportFragmentManager();
             manager=fragmentManager;
@@ -419,14 +424,18 @@ public class MainActivity extends AppCompatActivity {
 
         } else {
             getFragmentManager().popBackStack();
+            Log.d("jdskjdkjsj","sdjsnjd");
         }
-
+        Log.d("jdskjdkjsj","jsdjkjsjjjs");
         editor = sharedPreferences.edit();
         editor.putBoolean("homechecker",false);
         editor.apply();
 
+       /* if(sharedPreferences.getBoolean("firsttime",false))
+        {
             this.finishAffinity();
             System.exit(0);
+        }*/
     }
 
     @Override
@@ -506,9 +515,7 @@ public class MainActivity extends AppCompatActivity {
             Log.i("Mainjdjdjkjkd", "cancel timer");
             timer = null;
         }
-
         Log.d("mainactivity","mainactivity");
-
 
     }
 
