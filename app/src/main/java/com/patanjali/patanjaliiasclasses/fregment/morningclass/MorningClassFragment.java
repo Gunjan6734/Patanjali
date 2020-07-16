@@ -154,6 +154,7 @@ public class MorningClassFragment extends Fragment implements MoringClassAdapter
             }
         });
 
+
         MainActivity.linearoutfooter1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -214,8 +215,7 @@ public class MorningClassFragment extends Fragment implements MoringClassAdapter
     private void cheloging() {
 
         if (UserSession.getIsLogin(mainActivity)) {
-
-//            MainActivity.linearout.setVisibility(View.GONE);
+         //MainActivity.linearout.setVisibility(View.GONE);
             viewmorningdatawithlogin();
             golsidtext.setVisibility(View.VISIBLE);
             mainActivity.navigationView.getMenu().findItem(R.id.nav_mylibrary).setVisible(true);
@@ -265,12 +265,9 @@ public class MorningClassFragment extends Fragment implements MoringClassAdapter
         }
     }
 
-
-
     // List<ClassData> classDataList=new ArrayList<>();
 
     private void viewmorningdatawithlogin() {
-
 
             sharedPreferences = getActivity().getSharedPreferences(SHARD_PREF, MODE_PRIVATE);
             Log.d("jnskdnks",""+sharedPreferences);
@@ -281,7 +278,6 @@ public class MorningClassFragment extends Fragment implements MoringClassAdapter
         String myliburl=ut.BASE_URL +"Onlinecourses/"+ut.Securetkey;
         Log.e("myliburl",myliburl);
         try {
-
             //Here the json data is add to a hash map with key data
             Map<String,String> params = new HashMap<String, String>();
 
@@ -294,21 +290,18 @@ public class MorningClassFragment extends Fragment implements MoringClassAdapter
                 @Override
                 public void onResponse(Call<ArrayList<ClassData>> call, Response<ArrayList<ClassData>> response) {
                     if (response.isSuccessful() && response.body().size()>0){
-                        Log.e("response", response.toString());
+                        Log.e("responsewithlogin", response.toString());
                         classDataList=new ArrayList<>();
                         classDataList=response.body();
-
                         /*for (ClassData morningClas_model : response.body()){
                             if (morningClas_model.getOnlinepayment().equals("True")){
-
                                 classDataList.add(morningClas_model);
-
                             }
                         }*/
                         MoringClassAdapter moringClassAdapter= new MoringClassAdapter(getActivity(),classDataList,MorningClassFragment.this);
                         recyclerViewmrngcls.setAdapter(moringClassAdapter);
                     }else {
-                        Toast.makeText(mainActivity, "Try again", Toast.LENGTH_SHORT).show();
+                       Toast.makeText(mainActivity, "Try again", Toast.LENGTH_SHORT).show();
                     }
                 }
 
@@ -435,7 +428,7 @@ public class MorningClassFragment extends Fragment implements MoringClassAdapter
     @Override
     public void onStart() {
 
-        liveClassAPi();
+       // liveClassAPi();
 
         timer = new CountDownTimer(86400000 , 20000) {
             @Override

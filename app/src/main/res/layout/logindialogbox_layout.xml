@@ -184,7 +184,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginTop="55dp"
             android:visibility="gone"
-            android:text="Did Not Receive OTP? Resend OTP In 30 Seconds"
+            android:text=""
             android:textColor="@color/Blacki"
             android:textSize="12sp" />
 
@@ -246,7 +246,6 @@
             android:textStyle="bold"
             android:textColor="@color/colorWhite"
             android:textSize="15sp" />
-
 
     </RelativeLayout>
 

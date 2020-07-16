@@ -88,7 +88,6 @@ import static com.patanjali.patanjaliiasclasses.activity.MainActivity.nextimageb
 import static com.patanjali.patanjaliiasclasses.activity.MainActivity.notifyimage;
 //import static com.patanjali.patanjaliiasclasses.activity.MainActivity.selectitemetdtext;
 //import static com.patanjali.patanjaliiasclasses.activity.MainActivity.selectitemetdtext202;
-
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
@@ -109,8 +108,6 @@ public class HomeFragment extends Fragment {
     String EMobilenumber,msetpasswordedttext,mconfirmsetpasswordedttext,Mregisterpassedttext,mregistermobilenumber,mregisterotpedttext;
 
     private NetworkStateReceiver networkStateReceiver;
-
-
     //SharedPreference Use
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
@@ -220,7 +217,7 @@ public class HomeFragment extends Fragment {
             }
         });
 
-       /* cartid2.setOnClickListener(new View.OnClickListener() {
+        /* cartid2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 VediosPlayFragment vedioPlayerFragment = new VediosPlayFragment();
@@ -242,7 +239,6 @@ public class HomeFragment extends Fragment {
                 ft.replace(R.id.nav_host_fragment, freeDowloadsFragment);
                 ft.addToBackStack(null);
                 ft.commit();
-
             }
         });
 
@@ -453,10 +449,9 @@ public class HomeFragment extends Fragment {
                     }
                 }
             }
-
             @Override
             public void afterTextChanged(Editable s) {
-//                findPlaceWaypoints();
+           // findPlaceWaypoints();
             }
         });*/
 
@@ -494,8 +489,6 @@ public class HomeFragment extends Fragment {
                 }
             }
 
-
-
             @Override
             public void afterTextChanged(Editable s) {
 //                findPlaceWaypoints();
@@ -516,8 +509,8 @@ public class HomeFragment extends Fragment {
                     return;
 
                 }else {
-                    postotpnumberregstr(registermobilenumber,setloginpassword);
 
+                    postotpnumberregstr(registermobilenumber,setloginpassword);
                 }
             }
         });
@@ -549,6 +542,7 @@ public class HomeFragment extends Fragment {
             }
         });
 
+
         registerbuttonoldusr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -567,10 +561,8 @@ public class HomeFragment extends Fragment {
                 else if (!registermobilenumber.getText().toString().equals(setloginpassword.getText().toString())) {
                     setloginpassword.requestFocus();
                     setloginpassword.setError("Enter Valid Password");
-
                   //  Toast.makeText(getActivity(),"Enter valid password!",Toast.LENGTH_LONG).show();
                     return;
-
                 }
 
                 else if (registermobilenumber.getText().toString().equals(setloginpassword.getText().toString())) {
@@ -655,6 +647,7 @@ public class HomeFragment extends Fragment {
                 setloginpassword.setVisibility(View.GONE);
                 callingforgetpasswordapi();
                 forgotPasswordCheck=2;
+                registerbuttonoldusr.setVisibility(View.GONE);
 
             }
         });
@@ -694,14 +687,12 @@ public class HomeFragment extends Fragment {
                                 doubleBackToExitPressed++;
                                 Toast.makeText(getActivity(), "Please Click Back again To Exit", Toast.LENGTH_SHORT).show();
                             }
-
                            /* new Handler().postDelayed(new Runnable() {
                                 @Override
                                 public void run() {
                                     getActivity().finish();
                                 }
                             }, 2000);*/
-
                             return true;
                         }
                         return false;
@@ -795,7 +786,7 @@ public class HomeFragment extends Fragment {
             Toast.makeText(getActivity(), "Enter Valid Mobile No.!", Toast.LENGTH_SHORT).show();
         }
     }
-    int second=0;
+
 
     private void starttimer(TextView resendotptimer,TextView resendotp) {
 
@@ -892,11 +883,8 @@ public class HomeFragment extends Fragment {
         String Eregistermobilenumber = registermobilenumber.getText().toString();
         mregistermobilenumber = registermobilenumber.getText().toString();
         SaveSharedPreference.setnId(mregistermobilenumber);
-
         SaveSharedPreference.setUserId(mregistermobilenumber);
-
         Mregisterpassedttext = confirmsetpasswordedttext.getText().toString();
-
         /*Log.d("mobilenumber", mregistermobilenumber + Mregisterotpedttext);
            if (SelectedId.equals("0") && MainActivity.otpedttext.getText().toString().equalsIgnoreCase("")) {
                Toast.makeText(getActivity(), "Please Select A Goals", Toast.LENGTH_SHORT).show();
@@ -963,6 +951,7 @@ public class HomeFragment extends Fragment {
     }
 
     private void callingforgetpasswordapi() {
+
         final String forgetapi = ut.BASE_URL +"Authentication/ForgetPassword/"+ut.Securetkey+"/" +SaveSharedPreference.getUserId();
         Log.d("mobilenumber", forgetapi);
         try {
@@ -974,6 +963,9 @@ public class HomeFragment extends Fragment {
                     try {
                         JSONObject jsonObject = new JSONObject(response);
                         message = jsonObject.getString("message");
+
+
+
                         Log.d("message", message + UserSession.getIsLogin(mainActivity));
                         Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
 
@@ -1253,12 +1245,10 @@ public class HomeFragment extends Fragment {
         Log.d("EMobilenumber",EMobilenumber);
 
        /* Handler handler=new Handler();
-
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
                 Log.d("etmobileno",SaveSharedPreference.getUserId());
-
             }
         },1000);*/
 
@@ -1280,7 +1270,6 @@ public class HomeFragment extends Fragment {
                             String olduser=jsonObject.getString("olduser");
                             Log.d("message", message + UserSession.getIsLogin(mainActivity));
                             Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
-
                            /* selectitemetdtext202.setVisibility(View.VISIBLE);
                             selectitemetdtext.setVisibility(View.GONE);*/
                             sharedPreferences = getActivity().getSharedPreferences(SHARD_PREF, Context.MODE_PRIVATE);
@@ -1316,7 +1305,10 @@ public class HomeFragment extends Fragment {
                                 setolduserpassbutton.setVisibility(View.VISIBLE);
                                 loginbutton.setVisibility(View.GONE);
                                 resendotp.setVisibility(View.GONE);
+                                setloginpassword.setVisibility(View.VISIBLE);
                                 registerbutton.setVisibility(View.GONE);
+                                resendotptimer.setVisibility(View.GONE);
+                                forgetpassword.setVisibility(View.VISIBLE);
                                 registerbuttonoldusr.setVisibility(View.VISIBLE);
 
                             }else {

@@ -291,6 +291,231 @@
          app:srcCompat="@android:drawable/ic_dialog_email" />
  -->
 
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:gravity="bottom"
+        android:visibility="gone"
+        android:layout_height="60dp"
+        android:scrollbars="horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="100dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:background="@drawable/liveclasicon"
+                android:layout_width="30dp"
+                android:paddingTop="7dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Live Classroom"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:background="@drawable/footerimage"
+            android:layout_width="5dp"
+            android:backgroundTint="@color/colorWhite"
+            android:layout_height="65dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:paddingTop="7dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/onlinecoursesicon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Online Courses"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:background="@drawable/footerimage"
+            android:layout_width="5dp"
+            android:backgroundTint="@color/colorWhite"
+            android:layout_height="65dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:paddingTop="7dp"
+                android:background="@drawable/testseriesicon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Test Series"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:background="@drawable/footerimage"
+            android:layout_width="5dp"
+            android:backgroundTint="@color/colorWhite"
+            android:layout_height="65dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:background="@drawable/scholarshipicon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scholarship "
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:background="@drawable/footerimage"
+            android:layout_width="5dp"
+            android:backgroundTint="@color/colorWhite"
+            android:layout_height="65dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:background="@drawable/videocoursesicon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Video Courses"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+        <ImageView
+            android:background="@drawable/footerimage"
+            android:layout_width="5dp"
+            android:backgroundTint="@color/colorWhite"
+            android:layout_height="65dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:background="@drawable/freedownloadicon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Free Download"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
     <HorizontalScrollView
         android:id="@+id/horizontalView"
         android:layout_height="60dp"
@@ -333,7 +558,7 @@
 
             <ImageView
                 android:background="@drawable/foooterline"
-                android:layout_width="5dp"
+                android:layout_width="3dp"
                 android:tint="@color/colorWhite"
                 android:backgroundTint="@color/colorWhite"
                 android:layout_height="50dp"
@@ -350,10 +575,10 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:background="@drawable/onlinecoursesicon"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    android:background="@drawable/onlinecoursesicon" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -366,9 +591,11 @@
 
             </LinearLayout>
 
+
             <ImageView
-                android:background="@drawable/footerimage"
-                android:layout_width="5dp"
+                android:background="@drawable/foooterline"
+                android:layout_width="3dp"
+                android:tint="@color/colorWhite"
                 android:backgroundTint="@color/colorWhite"
                 android:layout_height="50dp"
                 android:layout_marginTop="5dp"
@@ -401,8 +628,10 @@
             </LinearLayout>
 
             <ImageView
-                android:background="@drawable/footerimage"
-                android:layout_width="5dp"
+                android:background="@drawable/foooterline"
+                android:layout_width="3dp"
+                android:tint="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
                 android:layout_height="50dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
@@ -434,13 +663,14 @@
             </LinearLayout>
 
             <ImageView
-                android:background="@drawable/footerimage"
-                android:layout_width="5dp"
+                android:background="@drawable/foooterline"
+                android:layout_width="3dp"
+                android:tint="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
                 android:layout_height="50dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"
                 />
-
             <LinearLayout
                 android:id="@+id/linearoutfooter5"
                 android:orientation="vertical"
@@ -467,8 +697,10 @@
             </LinearLayout>
 
             <ImageView
-                android:background="@drawable/footerimage"
-                android:layout_width="5dp"
+                android:background="@drawable/foooterline"
+                android:layout_width="3dp"
+                android:tint="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
                 android:layout_height="50dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp"

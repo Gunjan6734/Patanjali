@@ -113,12 +113,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,WindowManager.LayoutParams.FLAG_SECURE);
+    /* getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,WindowManager.LayoutParams.FLAG_SECURE);
        mProjectionManager = (MediaProjectionManager) getSystemService(Context.MEDIA_PROJECTION_SERVICE);
 
         if(android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
-        }
+        }*/
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -424,9 +424,7 @@ public class MainActivity extends AppCompatActivity {
 
         } else {
             getFragmentManager().popBackStack();
-            Log.d("jdskjdkjsj","sdjsnjd");
         }
-        Log.d("jdskjdkjsj","jsdjkjsjjjs");
         editor = sharedPreferences.edit();
         editor.putBoolean("homechecker",false);
         editor.apply();

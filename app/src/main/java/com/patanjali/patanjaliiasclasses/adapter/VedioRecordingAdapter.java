@@ -71,10 +71,10 @@ public class VedioRecordingAdapter extends RecyclerView.Adapter<VedioRecordingAd
         final String vediourl=vedioRecord_model.getVideourl();
         final String persentationurl=vedioRecord_model.getPresentationurl();
         final String urlType=vedioRecord_model.getUrlType();
+        Log.d("videoUrl",""+vediourl);
 
         try
         {
-
             if(urlType.equalsIgnoreCase("mp4"))
             {
                 RequestOptions requestOptions = new RequestOptions();
@@ -91,7 +91,8 @@ public class VedioRecordingAdapter extends RecyclerView.Adapter<VedioRecordingAd
                 requestOptions.isMemoryCacheable();
                 Glide.with(context)
                         .setDefaultRequestOptions(requestOptions)
-                        .load(vediourl).into(holder.vedioimage);
+                        .load(vediourl)
+                        .into(holder.vedioimage);
             }
             else
             {

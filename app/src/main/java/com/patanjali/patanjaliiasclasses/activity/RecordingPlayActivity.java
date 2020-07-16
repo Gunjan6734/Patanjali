@@ -51,7 +51,7 @@ public class RecordingPlayActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recording_play);getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
+       setContentView(R.layout.activity_recording_play);getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -86,7 +86,7 @@ public class RecordingPlayActivity extends AppCompatActivity {
         //Get webview
         webView = (WebView) findViewById(R.id.webView2);
         framelayout2 = findViewById(R.id.framelayout2);
-        webView.getSettings().setJavaScriptEnabled(true);
+       // webView.getSettings().setJavaScriptEnabled(true);
 
         //String url="https://meeting.globalclasses.live/b";
         //  webView.loadUrl(url);
