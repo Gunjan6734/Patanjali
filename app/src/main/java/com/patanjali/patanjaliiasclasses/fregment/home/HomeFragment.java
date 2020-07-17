@@ -72,6 +72,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -127,7 +128,6 @@ public class HomeFragment extends Fragment {
     private CountDownTimer countDownTimer;
     private boolean mTimerRunning;
     private long mTimerLeftInMilllis=START_TIME_IN_MILLIS;
-    private ImageView live;
     private ImageButton notification;
     private ImageView home;
 
@@ -145,6 +145,8 @@ public class HomeFragment extends Fragment {
         sharedPreferences = getActivity().getSharedPreferences(SHARD_PREF, Context.MODE_PRIVATE);
         notification=mainActivity.findViewById(R.id.notifyimage);
         home=mainActivity.findViewById(R.id.homepage);
+        clearApplicationData();
+        Log.d("jndkjsndjknbsjdbs","dhshdsu");
 
         if(sharedPreferences.getBoolean("homechecker",false))
         {
@@ -167,18 +169,18 @@ public class HomeFragment extends Fragment {
 
         }else {
             openlogindialogbox();
-        }
             new GooglePlayStoreAppVersionNameLoader(getActivity(), new VersionCheckListner() {
-            @Override
-            public void onGetResponse(boolean isUpdateAvailable) {
-                if (isUpdateAvailable){
-                    openGoToPlayStoreAlert();
+                @Override
+                public void onGetResponse(boolean isUpdateAvailable) {
+                    if (isUpdateAvailable){
+                        openGoToPlayStoreAlert();
+                    }
                 }
-            }
-        }).execute();
+            }).execute();
+        }
+
 
         new SaveSharedPreference(getActivity());
-        live=root.findViewById(R.id.live);
         cartid=root.findViewById(R.id.cartid);
         cartid2=root.findViewById(R.id.cartid2);
         cartid3=root.findViewById(R.id.cartid3);
@@ -1537,6 +1539,37 @@ public class HomeFragment extends Fragment {
         ConnectivityManager connectivityManager = (ConnectivityManager) getActivity().getSystemService(CONNECTIVITY_SERVICE);
         NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
         return activeNetworkInfo != null;
+    }
+
+    public void clearApplicationData()
+    {
+        File cache = getActivity().getCacheDir();
+        File appDir = new File(cache.getParent());
+        if (appDir.exists()) {
+            String[] children = appDir.list();
+            for (String s : children) {
+                if (!s.equals("lib")) {
+                    deleteDir1(new File(appDir, s));
+                }
+            }
+        }
+    }
+
+    public static boolean deleteDir1(File dir1)
+    {
+        if (dir1 != null && dir1.isDirectory()) {
+            String[] children = dir1.list();
+            for (int i = 0; i < children.length; i++) {
+                boolean success = deleteDir1(new File(dir1, children[i]));
+                Log.d("sucesss",""+success);
+                if (!success) {
+                    Log.d("sucesss",""+success);
+
+                    return false;
+                }
+            }
+        }
+        return dir1.delete();
     }
 
 }

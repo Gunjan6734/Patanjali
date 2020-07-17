@@ -70,6 +70,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
+
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -81,7 +83,6 @@ public class MainActivity extends AppCompatActivity {
     MainActivity mainActivity;
     String Device_id;
     Config ut;
-
     //shared prefernce
     //SharedPreference Use
     SharedPreferences sharedPreferences;
@@ -106,19 +107,18 @@ public class MainActivity extends AppCompatActivity {
     private CountDownTimer timer;
     int doubleBackToExitPressed = 1;
 
-
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-    /* getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,WindowManager.LayoutParams.FLAG_SECURE);
+    getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,WindowManager.LayoutParams.FLAG_SECURE);
        mProjectionManager = (MediaProjectionManager) getSystemService(Context.MEDIA_PROJECTION_SERVICE);
 
-        if(android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+        if(android.os.Build.VERSION.SDK_INT >= 20) {
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
-        }*/
+        }
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
         editor.putBoolean("firsttime",true);
         editor.apply();
 
-         //  mobilenumber=findViewById(R.id.mobilenumber);
+        //  mobilenumber=findViewById(R.id.mobilenumber);
         //  otpedttext=findViewById(R.id.otpedttext);
         /*selectitemetdtext=findViewById(R.id.selectitemetdtext);
         selectitemetdtext202=findViewById(R.id.selectitemetdtext202);
@@ -524,7 +524,43 @@ public class MainActivity extends AppCompatActivity {
             timer.cancel();
             Log.i("Mainjdjdjkjkd", "cancel timer");
             timer = null;
+           clearApplicationData();
         }
+    }
+
+    @Override
+    protected void onResume() {
+      clearApplicationData();
+      super.onResume();
+    }
+
+    public void clearApplicationData()
+    {
+        File cache = getCacheDir();
+        File appDir = new File(cache.getParent());
+        if (appDir.exists()) {
+            String[] children = appDir.list();
+            for (String s : children) {
+                if (!s.equals("lib")) {
+                    deleteDir1(new File(appDir, s));
+                }
+            }
+        }
+    }
+
+    public static boolean deleteDir1(File dir1)
+    {
+        if (dir1 != null && dir1.isDirectory()) {
+        String[] children = dir1.list();
+        for (int i = 0; i < children.length; i++) {
+            boolean success = deleteDir1(new File(dir1, children[i]));
+            Log.d("sucesss",""+success);
+            if (!success) {
+                return false;
+            }
+        }
+    }
+        return dir1.delete();
     }
 }
 

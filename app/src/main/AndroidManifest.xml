@@ -17,7 +17,7 @@
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
-    <uses-feature android:name="android.hardware.camera.autofocus" />
+     <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
         android:allowBackup="true"
@@ -26,7 +26,6 @@
         android:largeHeap="true"
         android:roundIcon="@drawable/patanjaliapplogo"
         android:supportsRtl="true"
-        android:hardwareAccelerated="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name=".activity.PersentationActivity"
@@ -59,7 +58,8 @@
             android:name=".fregment.videoplay.VedioPlayerFragment"
             android:screenOrientation="landscape" />
 
-        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+        <uses-library android:name="org.apache.http.legacy"
+            android:required="false" />
 
     </application>
 
