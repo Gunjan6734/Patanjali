@@ -145,7 +145,6 @@ public class HomeFragment extends Fragment {
         sharedPreferences = getActivity().getSharedPreferences(SHARD_PREF, Context.MODE_PRIVATE);
         notification=mainActivity.findViewById(R.id.notifyimage);
         home=mainActivity.findViewById(R.id.homepage);
-        clearApplicationData();
         Log.d("jndkjsndjknbsjdbs","dhshdsu");
 
         if(sharedPreferences.getBoolean("homechecker",false))
@@ -469,8 +468,7 @@ public class HomeFragment extends Fragment {
                 Log.d("start", String.valueOf(start));
                 Log.d("s", String.valueOf(s));
                 if (s.length() == 10) {
-
-                    if(isNetworkAvailable())
+                    if(isInternetAvailable(context))
                     {
                         findPlaceWaypoints(registermobilenumber,registerotpedttext,setloginpassword,registerbutton,loginbutton,forgetpassword, setloginotppassword,resendotptimer,loginrelativouyt,setpassrelativouyt,setpassbutton,setolduserpassbutton,registerbuttonoldusr);
                     }
@@ -478,7 +476,6 @@ public class HomeFragment extends Fragment {
                     {
                         Toast.makeText(getActivity(),"Please check your internet connection!",Toast.LENGTH_SHORT).show();
                     }
-
                     try {
                         InputMethodManager inputManager = (InputMethodManager) getActivity().getSystemService(getActivity().INPUT_METHOD_SERVICE);
                         mobilenumber.requestFocus();
@@ -1541,35 +1538,24 @@ public class HomeFragment extends Fragment {
         return activeNetworkInfo != null;
     }
 
-    public void clearApplicationData()
-    {
-        File cache = getActivity().getCacheDir();
-        File appDir = new File(cache.getParent());
-        if (appDir.exists()) {
-            String[] children = appDir.list();
-            for (String s : children) {
-                if (!s.equals("lib")) {
-                    deleteDir1(new File(appDir, s));
-                }
-            }
-        }
-    }
+    public boolean isInternetAvailable(Context context) {
 
-    public static boolean deleteDir1(File dir1)
-    {
-        if (dir1 != null && dir1.isDirectory()) {
-            String[] children = dir1.list();
-            for (int i = 0; i < children.length; i++) {
-                boolean success = deleteDir1(new File(dir1, children[i]));
-                Log.d("sucesss",""+success);
-                if (!success) {
-                    Log.d("sucesss",""+success);
+        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+        if (activeNetwork != null) { // connected to the internet
+            if (activeNetwork.getType() == ConnectivityManager.TYPE_WIFI) {
+                // connected to wifi
+                return true;
 
-                    return false;
-                }
+            } else if (activeNetwork.getType() == ConnectivityManager.TYPE_MOBILE) {
+                // connected to the mobile provider's data plan
+                return true;
             }
+        } else {
+            Toast.makeText(getActivity(),"Please check your internet connection!",Toast.LENGTH_SHORT).show();
+            return false;
         }
-        return dir1.delete();
+        return false;
     }
 
 }

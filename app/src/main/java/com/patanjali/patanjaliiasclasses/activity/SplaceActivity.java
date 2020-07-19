@@ -44,6 +44,7 @@ public class SplaceActivity extends AppCompatActivity {
     private TextView[] dots;
     private int[] layouts;
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

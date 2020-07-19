@@ -54,6 +54,8 @@ public class GetData extends AsyncTask<Object, Void, Object> {
         this.listener=listener;
         sharedPreferences = context.getSharedPreferences(SHARD_PREF,MODE_PRIVATE);
         Usertoken=sharedPreferences.getString("token","");
+
+        Log.d("jndkjndkjs",""+Usertoken);
     }
 
     @Override
@@ -79,9 +81,9 @@ public class GetData extends AsyncTask<Object, Void, Object> {
             //  response = httpClient.execute(httpPost);
 
             HttpParams httpParams = new SyncBasicHttpParams();
-            int timeoutConnection = 5000;
+            int timeoutConnection = 30000;
             HttpConnectionParams.setConnectionTimeout(httpParams, timeoutConnection);
-            int timeoutSocket = 5000;
+            int timeoutSocket = 30000;
             HttpConnectionParams.setSoTimeout(httpParams, timeoutSocket);
             HttpContext localContext = new BasicHttpContext();
 
@@ -148,7 +150,7 @@ public class GetData extends AsyncTask<Object, Void, Object> {
             listener.onTaskCompleted(response);
 
         }else{
-//            Toast.makeText(context, "Oops! something went wrong. Please try again after some time", Toast.LENGTH_SHORT).show();
+    // Toast.makeText(context, "Oops! something went wrong. Please try again after some time", Toast.LENGTH_SHORT).show();
 
             dialog.dismiss();
         }

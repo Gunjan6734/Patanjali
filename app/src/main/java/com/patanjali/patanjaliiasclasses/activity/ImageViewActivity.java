@@ -19,7 +19,7 @@ import com.patanjali.patanjaliiasclasses.R;
 
 public class ImageViewActivity extends AppCompatActivity {
 
-//    ImageView imageView;
+    //ImageView imageView;
     WebView webview;
     String imgurl = "";
 

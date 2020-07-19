@@ -70,14 +70,12 @@ public class GetLiveData extends AsyncTask<Object, Void, Object> {
             StringEntity se = null;
             Log.d("GetUrl",url);
             se = new StringEntity(jsonObject.toString());
-
             Log.d("JSONOBJECT", jsonObject.toString());
             //   httpPost.setEntity(se);
 
             httpPost.setHeader(new BasicHeader("Content-type", "application/json"));
 
             httpPost.setHeader(new BasicHeader("Authorization", "Bearer " + Usertoken));
-
             //  response = httpClient.execute(httpPost);
 
             HttpParams httpParams = new SyncBasicHttpParams();
@@ -107,7 +105,6 @@ public class GetLiveData extends AsyncTask<Object, Void, Object> {
                 // Constants.SEND_STATUS=status_code;
                 response=total.toString();
                 //  Constants.getLocationPOJOList= Arrays.asList(new Gson().fromJson(total.toString(), GetLocationPOJO[].class));
-
             }
 
         } catch (Exception e) {

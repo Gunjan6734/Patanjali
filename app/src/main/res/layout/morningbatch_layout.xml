@@ -111,6 +111,7 @@
 
                     <RelativeLayout
                         android:layout_weight="1"
+                        android:visibility="gone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
@@ -139,7 +140,7 @@
 
                     <RelativeLayout
                         android:layout_weight="1"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
 
                         <TextView
@@ -156,8 +157,8 @@
                             android:id="@+id/onlnfeetext1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
                             android:layout_marginRight="15dp"
+                            android:layout_marginLeft="60dp"
                             android:text="Rs.00.00"
                             android:textColor="@color/textcolor3"
                             android:textSize="12sp"

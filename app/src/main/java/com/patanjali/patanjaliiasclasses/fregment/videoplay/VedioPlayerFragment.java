@@ -103,9 +103,7 @@ public class VedioPlayerFragment extends AppCompatActivity {
         setContentView(R.layout.fragment_vedio_player);
 
         userSession = new UserSession(this);
-
         url = getIntent().getStringExtra("url");
-
         final Handler h;
         h = new Handler();
         new Thread(new Runnable() {

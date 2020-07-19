@@ -332,7 +332,7 @@
             </LinearLayout>
 
             <ImageView
-                android:background="@drawable/foooterline"
+                android:background="@drawable/footerimage"
                 android:layout_width="3dp"
                 android:tint="@color/colorWhite"
                 android:backgroundTint="@color/colorWhite"
@@ -368,7 +368,7 @@
 
 
             <ImageView
-                android:background="@drawable/foooterline"
+                android:background="@drawable/footerimage"
                 android:layout_width="3dp"
                 android:tint="@color/colorWhite"
                 android:backgroundTint="@color/colorWhite"
@@ -403,7 +403,7 @@
             </LinearLayout>
 
             <ImageView
-                android:background="@drawable/foooterline"
+                android:background="@drawable/footerimage"
                 android:layout_width="3dp"
                 android:tint="@color/colorWhite"
                 android:backgroundTint="@color/colorWhite"
@@ -438,7 +438,7 @@
             </LinearLayout>
 
             <ImageView
-                android:background="@drawable/foooterline"
+                android:background="@drawable/footerimage"
                 android:layout_width="3dp"
                 android:tint="@color/colorWhite"
                 android:backgroundTint="@color/colorWhite"
@@ -472,7 +472,7 @@
             </LinearLayout>
 
             <ImageView
-                android:background="@drawable/foooterline"
+                android:background="@drawable/footerimage"
                 android:layout_width="3dp"
                 android:tint="@color/colorWhite"
                 android:backgroundTint="@color/colorWhite"

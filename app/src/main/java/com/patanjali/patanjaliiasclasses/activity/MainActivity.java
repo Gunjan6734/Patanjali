@@ -46,6 +46,8 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.navigation.NavigationView;
 import com.patanjali.patanjaliiasclasses.fregment.mylibrary.MyLibraryFragment;
+import com.patanjali.patanjaliiasclasses.fregment.videoplay.VedioPlayerFragment;
+import com.patanjali.patanjaliiasclasses.model.ClassData;
 import com.patanjali.patanjaliiasclasses.service.GetData;
 import com.patanjali.patanjaliiasclasses.service.GetLiveData;
 import com.patanjali.patanjaliiasclasses.service.OnTaskCompleted;
@@ -83,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
     MainActivity mainActivity;
     String Device_id;
     Config ut;
+    String meetingId;
     //shared prefernce
     //SharedPreference Use
     SharedPreferences sharedPreferences;
@@ -138,8 +141,8 @@ public class MainActivity extends AppCompatActivity {
         /*selectitemetdtext=findViewById(R.id.selectitemetdtext);
         selectitemetdtext202=findViewById(R.id.selectitemetdtext202);
         nextimage=findViewById(R.id.nextimage);*/
-//        nextimagebtn=findViewById(R.id.nextimagebtn);
-//        linearout=findViewById(R.id.linearout);
+//      nextimagebtn=findViewById(R.id.nextimagebtn);
+//      linearout=findViewById(R.id.linearout);
         //username=findViewById(R.id.username);
         golsidtext = findViewById(R.id.golsidtext);
         // opnarroimage=findViewById(R.id.opnarroimage);
@@ -152,6 +155,13 @@ public class MainActivity extends AppCompatActivity {
         linearlayout = findViewById(R.id.linearlayout);
         linearoutfooter1 = findViewById(R.id.linearoutfooter1);
         linearoutfooter6=findViewById(R.id.linearoutfooter6);
+
+        live.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                callingApi();
+            }
+        });
 
         Device_id = Settings.Secure.getString(getApplicationContext().getContentResolver(), Settings.Secure.ANDROID_ID);
         getnamelogo(Device_id);
@@ -270,7 +280,6 @@ public class MainActivity extends AppCompatActivity {
                                     mainActivity.navigationView.getMenu().findItem(R.id.nav_yourprofile).setVisible(false);
                                     mainActivity.navigationView.getMenu().findItem(R.id.nav_contact).setVisible(false);
                                     mainActivity.navigationView.getMenu().findItem(R.id.nav_logoutfregment).setVisible(false);
-
                                     // Clear the session data
                                     // This will clear all session data and
                                     // redirect user to LoginActivity
@@ -279,6 +288,7 @@ public class MainActivity extends AppCompatActivity {
                                     startActivity(intent);
                                     MainActivity.this.finish();
                                     MainActivity.this.finishAffinity();
+                                   // clearApplicationData();
                                 }
                             }).setNegativeButton("No", new DialogInterface.OnClickListener() {
 
@@ -293,7 +303,6 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-
 
         txtProfileName = (TextView) navigationView.getHeaderView(0).findViewById(R.id.userphonenumber);
         userproname = (TextView) navigationView.getHeaderView(0).findViewById(R.id.userproname);
@@ -486,10 +495,12 @@ public class MainActivity extends AppCompatActivity {
                         for (int i=0;i<jsonArray.length();i++) {
                             JSONObject jsonObject = jsonArray.getJSONObject(i);
                             String status = jsonObject.getString("meeting");
+                            meetingId=jsonObject.getString("meeting");
                             Log.e("displaydata",status);
                             if(status.equalsIgnoreCase("0"))
                             {
-                                live.setVisibility(View.INVISIBLE);
+                               live.setVisibility(View.INVISIBLE);
+                               // live.setVisibility(View.VISIBLE);
                             }
                             else
                             {
@@ -524,14 +535,7 @@ public class MainActivity extends AppCompatActivity {
             timer.cancel();
             Log.i("Mainjdjdjkjkd", "cancel timer");
             timer = null;
-           clearApplicationData();
         }
-    }
-
-    @Override
-    protected void onResume() {
-      clearApplicationData();
-      super.onResume();
     }
 
     public void clearApplicationData()
@@ -562,5 +566,45 @@ public class MainActivity extends AppCompatActivity {
     }
         return dir1.delete();
     }
+
+
+    public void callingApi() {
+
+
+        try {
+            new GetData(mainActivity, new JSONObject(), ut.BASE_URL +"joinmeeting/"+ut.Securetkey+"/"+userSession.getMobile()+"/"+meetingId,
+                    new OnTaskCompleted<String>() {
+                        @Override
+                        public void onTaskCompleted(String response) {
+
+                            Log.d("jfdkjsnjkfnskjf","jsdhnkjsnkjs");
+                            try {
+                                JSONArray jsonArray=new JSONArray(response);
+                                JSONObject object=jsonArray.getJSONObject(0);
+                                int responseCode=object.getInt("responsecode");
+                                if (responseCode==1){
+                                    String url=object.getString("message");
+                                    try {
+                                        // VedioPlayerFragment vedioPlayerFragment = new VedioPlayerFragment();
+                                        Intent bundle = new Intent(getApplicationContext(), VedioPlayerFragment.class);
+                                        bundle.putExtra("url",url);
+                                        startActivity(bundle);
+
+                                    } catch (Exception e) {
+                                        e.printStackTrace();
+                                    }
+                                }else {
+                                    Toast.makeText(getApplicationContext(), "Try again", Toast.LENGTH_SHORT).show();
+                                }
+                            }catch (Exception e){
+                                e.printStackTrace();
+                            }
+                        }
+                    },true).execute();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
 }
 

@@ -280,7 +280,6 @@ public class MorningClassFragment extends Fragment implements MoringClassAdapter
         try {
             //Here the json data is add to a hash map with key data
             Map<String,String> params = new HashMap<String, String>();
-
             params.put("userid",SaveSharedPreference.getUserId());
             Log.e("response", toString());
 

@@ -20,9 +20,10 @@ android {
         }
     }
     defaultConfig {
-
         resConfigs "en"
     }
+
+
 
     lintOptions {
         checkReleaseBuilds false
@@ -43,8 +44,8 @@ android {
         targetCompatibility = 1.8
     }
 
-
     dependencies {
+
         implementation fileTree(dir: 'libs', include: ['*.jar'])
 
         implementation 'io.sentry:sentry-android:1.7.27'

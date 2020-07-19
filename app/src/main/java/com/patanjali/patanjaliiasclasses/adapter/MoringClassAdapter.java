@@ -122,7 +122,7 @@ public class MoringClassAdapter extends RecyclerView.Adapter<MoringClassAdapter.
         holder.aouttext2.setText(morningClas_model.getClassdescription());
         holder.goalsidtext.setText(morningClas_model.getGoalID());
         //holder.meetingid.setText(morningClas_model.getMeetingID());
-        Log.d("kjndknsn","jdnskjnkjfbkjdkjf");
+        Log.d("onlinepaymentmode",""+morningClas_model.getOnlinepayment()+""+morningClas_model.getLivestreaming());
 
         if (UserSession.getIsLogin(context)){
 
@@ -168,7 +168,6 @@ public class MoringClassAdapter extends RecyclerView.Adapter<MoringClassAdapter.
             @Override
             public void onClick(View v) {
                 callingApi(morningClas_modelList.get(position));
-
             }
         });
 
